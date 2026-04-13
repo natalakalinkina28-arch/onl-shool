@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог курсов — Умик</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">🎓 Умик</a>
+            <nav class="nav">
+                <a href="catalog.html" style="color: var(--primary-color);">Курсы</a>
+                <a href="index.html#categories">Направления</a>
+                <a href="about.html">О нас</a>
+                <a href="contacts.html">Контакты</a>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-text">Войти</a>
+                <a href="#" class="btn btn-primary btn-sm">Регистрация</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 60px 20px;">
+        <h1 style="font-size: 48px; margin-bottom: 20px;">Каталог курсов</h1>
+        
+        <!-- Фильтры -->
+        <div class="tags" style="justify-content: flex-start; margin-bottom: 40px;">
+            <button class="tag active">Все</button>
+            <button class="tag">💻 IT и разработка</button>
+            <button class="tag">🎨 Дизайн</button>
+            <button class="tag">📈 Маркетинг</button>
+            <button class="tag">📊 Аналитика</button>
+        </div>
+
+        <div class="courses-grid">
+            <!-- Карточка 1 -->
+            <div class="course-card">
+                <span class="course-badge">Хит продаж</span>
+                <div class="course-img color-1">🐍</div>
+                <div class="course-info">
+                    <div class="course-category">Программирование</div>
+                    <h3>Python-разработчик с нуля до PRO</h3>
+                    <div class="course-meta">
+                        <span>⭐ 4.9 (120)</span>
+                        <span>🕒 12 мес.</span>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">от 2 890 ₽/мес</span>
+                        <a href="#" class="btn-outline-sm">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="course-card">
+                <div class="course-img color-2">🎨</div>
+                <div class="course-info">
+                    <div class="course-category">Дизайн</div>
+                    <h3>Веб-дизайнер: создание сайтов</h3>
+                    <div class="course-meta">
+                        <span>⭐ 4.8 (85)</span>
+                        <span>🕒 8 мес.</span>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">от 3 190 ₽/мес</span>
+                        <a href="#" class="btn-outline-sm">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="course-card">
+                <div class="course-img color-3">📈</div>
+                <div class="course-info">
+                    <div class="course-category">Маркетинг</div>
+                    <h3>Интернет-маркетолог от Ingate</h3>
+                    <div class="course-meta">
+                        <span>⭐ 4.7 (60)</span>
+                        <span>🕒 6 мес.</span>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">от 2 500 ₽/мес</span>
+                        <a href="#" class="btn-outline-sm">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="course-card">
+                <div class="course-img color-4">📊</div>
+                <div class="course-info">
+                    <div class="course-category">Аналитика</div>
+                    <h3>Data Scientist: обучение с нуля</h3>
+                    <div class="course-meta">
+                        <span>⭐ 5.0 (42)</span>
+                        <span>🕒 18 мес.</span>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">от 3 500 ₽/мес</span>
+                        <a href="#" class="btn-outline-sm">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 5 (Добавлена для каталога) -->
+            <div class="course-card">
+                <div class="course-img color-1">📱</div>
+                <div class="course-info">
+                    <div class="course-category">Программирование</div>
+                    <h3>Мобильный разработчик (iOS/Android)</h3>
+                    <div class="course-meta">
+                        <span>⭐ 4.8 (75)</span>
+                        <span>🕒 10 мес.</span>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">от 3 200 ₽/мес</span>
+                        <a href="#" class="btn-outline-sm">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Карточка 6 (Добавлена для каталога) -->
+            <div class="course-card">
+                <span class="course-badge">Новинка</span>
+                <div class="course-img color-3">🤖</div>
+                <div class="course-info">
+                    <div class="course-category">IT и нейросети</div>
+                    <h3>Промпт-инженер: работа с ИИ</h3>
+                    <div class="course-meta">
+                        <span>⭐ 4.9 (15)</span>
+                        <span>🕒 2 мес.</span>
+                    </div>
+                    <div class="course-footer">
+                        <span class="course-price">от 1 990 ₽/мес</span>
+                        <a href="#" class="btn-outline-sm">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">🎓 Умик</div>
+                    <p>Современная образовательная платформа для старта в новой профессии.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Обучение</h4>
+                    <a href="catalog.html">Каталог курсов</a>
+                    <a href="#">Бесплатные курсы</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Поддержка</h4>
+                    <a href="#">Помощь</a>
+                    <a href="#">Оферта</a>
+                </div>
+            </div>
+            <div class="copyright">© 2026 Умик. Все права защищены.</div>
+        </div>
+    </footer>
+</body>
+</html>

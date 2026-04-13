@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Умик — Образовательная платформа</title>
+    <link rel="stylesheet" href="index.css" >
+    <nav class="nav">
+    
+    <a href="catalog.html">Курсы</a> 
+    
+    <a href="index.html#categories">Направления</a> 
+    
+    <a href="about.html">О нас</a> 
+    
+    <a href="contacts.html">Контакты</a> 
+</nav>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i> Умик
+            </div>
+            <nav class="nav">
+                <a href="#courses">Курсы</a>
+                <a href="#categories">Направления</a>
+                <a href="#about">О нас</a>
+                <a href="#contacts">Контакты</a>
+            </nav>
+            <div class="header-buttons">
+                <a href="#" class="btn btn-text">Войти</a>
+                <a href="#" class="btn btn-primary">Регистрация</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный экран (Hero) с градиентом -->
+    <section class="hero">
+        <div class="container hero-content">
+            <span class="badge">🚀 Старт карьеры в IT</span>
+            <h1>Освойте востребованную <br><span class="highlight">профессию онлайн</span></h1>
+            <p>Практические курсы от экспертов индустрии, поддержка личных наставников и гарантия трудоустройства.</p>
+            <div class="hero-actions">
+                <a href="#courses" class="btn btn-primary btn-lg">Выбрать курс</a>
+                <a href="#" class="btn btn-white btn-lg"><i class="fa-regular fa-circle-play"></i> Бесплатный урок</a>
+            </div>
+            
+            <!-- Декоративные элементы -->
+            <div class="hero-stats-floating">
+                <div class="stat-card">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <strong>50K+</strong>
+                        <span>Студентов</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <div>
+                        <strong>95%</strong>
+                        <span>Трудоустройство</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок поиска и категорий -->
+    <section id="categories" class="search-section">
+        <div class="container">
+            <div class="search-bar-wrapper">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" placeholder="Поиск курсов, профессий или навыков...">
+                <button class="btn btn-primary">Найти</button>
+            </div>
+            <div class="tags">
+                <span class="tag active">🔥 Все направления</span>
+                <span class="tag">💻 IT и разработка</span>
+                <span class="tag">🎨 Дизайн</span>
+                <span class="tag">📈 Маркетинг</span>
+                <span class="tag">💼 Управление</span>
+                <span class="tag">📊 Аналитика</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные курсы -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Популярные курсы</h2>
+                <a href="#" class="link-arrow">Смотреть все <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="courses-grid">
+                <!-- Карточка 1 -->
+                <div class="course-card">
+                    <div class="course-badge">Хит продаж</div>
+                    <div class="course-img color-1">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-category">Программирование</div>
+                        <h3>Python-разработчик с нуля до PRO</h3>
+                        <div class="course-meta">
+                            <span><i class="fa-solid fa-star"></i> 4.9 (120)</span>
+                            <span><i class="fa-regular fa-clock"></i> 12 мес.</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">от 2 890 ₽/мес</div>
+                            <button class="btn btn-outline-sm">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="course-card">
+                    <div class="course-img color-2">
+                        <i class="fa-solid fa-pen-nib"></i>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-category">Дизайн</div>
+                        <h3>Веб-дизайнер: создание сайтов</h3>
+                        <div class="course-meta">
+                            <span><i class="fa-solid fa-star"></i> 4.8 (85)</span>
+                            <span><i class="fa-regular fa-clock"></i> 8 мес.</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">от 3 190 ₽/мес</div>
+                            <button class="btn btn-outline-sm">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="course-card">
+                    <div class="course-img color-3">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-category">Маркетинг</div>
+                        <h3>Интернет-маркетолог от Ingate</h3>
+                        <div class="course-meta">
+                            <span><i class="fa-solid fa-star"></i> 4.7 (60)</span>
+                            <span><i class="fa-regular fa-clock"></i> 6 мес.</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">от 2 500 ₽/мес</div>
+                            <button class="btn btn-outline-sm">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Карточка 4 -->
+                 <div class="course-card">
+                    <div class="course-img color-4">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div class="course-info">
+                        <div class="course-category">Аналитика</div>
+                        <h3>Data Scientist: обучение с нуля</h3>
+                        <div class="course-meta">
+                            <span><i class="fa-solid fa-star"></i> 5.0 (42)</span>
+                            <span><i class="fa-regular fa-clock"></i> 18 мес.</span>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">от 3 500 ₽/мес</div>
+                            <button class="btn btn-outline-sm">Подробнее</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок статистики -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-box">
+                <div class="stat-item">
+                    <div class="stat-number">50K+</div>
+                    <div class="stat-text">Студентов обучается</div>
+                </div>
+                <div class="divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-text">Курсов в каталоге</div>
+                </div>
+                <div class="divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-text">Трудоустройство</div>
+                </div>
+                <div class="divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">4.8</div>
+                    <div class="stat-text">Средний рейтинг</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Призыв к действию -->
+    <section class="cta-section">
+        <div class="container cta-content">
+            <h2>Не знаете, какую профессию выбрать?</h2>
+            <p>Пройдите бесплатный тест за 5 минут и получите подборку курсов, которые подойдут именно вам.</p>
+            <button class="btn btn-white btn-lg">Пройти тест</button>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer id="contacts" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <div class="logo">
+                    <i class="fa-solid fa-graduation-cap"></i> Умик
+                </div>
+                <p>Современная образовательная платформа для старта в новой профессии.</p>
+                <div class="socials">
+                    <a href="#"><i class="fa-brands fa-vk"></i></a>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Обучение</h4>
+                <a href="#">Каталог курсов</a>
+                <a href="#">Бесплатные курсы</a>
+                <a href="#">Для бизнеса</a>
+                <a href="#">Сертификаты</a>
+            </div>
+            <div class="footer-col">
+                <h4>Компания</h4>
+                <a href="#">О нас</a>
+                <a href="#">Карьера</a>
+                <a href="#">Контакты</a>
+                <a href="#">Блог</a>
+            </div>
+            <div class="footer-col">
+                <h4>Поддержка</h4>
+                <a href="#">Помощь</a>
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Оферта</a>
+            </div>
+        </div>
+        <div class="container copyright">
+            © 2026 Умик. Все права защищены. Разработано Калинкиной Н.А.
+        </div>
+    </footer>
+
+</body>
+</html>

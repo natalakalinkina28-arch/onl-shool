@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход — Умик</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .login-container { display: flex; justify-content: center; align-items: center; min-height: calc(100vh - 200px); }
+        .login-box { background: #fff; padding: 40px; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); width: 100%; max-width: 400px; text-align: center; }
+        .form-group { margin-bottom: 20px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; font-size: 14px; }
+        .form-input { width: 100%; padding: 12px 16px; border: 1px solid #E5E7EB; border-radius: 12px; font-size: 16px; font-family: 'Inter', sans-serif; transition: 0.3s; box-sizing: border-box; }
+        .form-input:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2); }
+        .forgot-link { display: block; text-align: right; margin-bottom: 20px; font-size: 14px; color: var(--primary-color); }
+        .social-login { display: flex; gap: 10px; margin-top: 20px; }
+        .social-btn { flex: 1; padding: 10px; border: 1px solid #E5E7EB; border-radius: 12px; cursor: pointer; background: #fff; transition: 0.3s; }
+        .social-btn:hover { border-color: var(--primary-color); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">🎓 Умик</a>
+            <nav class="nav">
+                <a href="catalog.html">Курсы</a>
+                <a href="about.html">О нас</a>
+            </nav>
+            <a href="index.html" class="btn btn-text">На главную</a>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <div class="login-box">
+            <h2 style="margin-bottom: 10px;">Вход в аккаунт</h2>
+            <p style="color: var(--text-gray); margin-bottom: 30px;">Добро пожаловать обратно!</p>
+            
+            <form onsubmit="return false;">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-input" placeholder="your@email.com">
+                </div>
+                <div class="form-group">
+                    <label>Пароль</label>
+                    <input type="password" class="form-input" placeholder="••••••••">
+                </div>
+                
+                <a href="#" class="forgot-link">Забыли пароль?</a>
+                
+                <button class="btn btn-primary" style="width: 100%;">Войти</button>
+            </form>
+
+            <p style="margin-top: 20px; font-size: 14px; color: var(--text-gray);">
+                Нет аккаунта? <a href="#" style="color: var(--primary-color); font-weight: 600;">Зарегистрироваться</a>
+            </p>
+
+            <div class="social-login">
+                <button class="social-btn">VK</button>
+                <button class="social-btn">Google</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" style="padding-top: 40px; padding-bottom: 20px;">
+        <div class="container">
+            <div class="copyright" style="border: none; padding-top: 0;">© 2026 Умик. Все права защищены.</div>
+        </div>
+    </footer>
+</body>
+</html>

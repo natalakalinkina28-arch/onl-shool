@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — Умик</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .contact-form { background: #fff; padding: 40px; border-radius: 24px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+        .form-input { width: 100%; padding: 12px 16px; border: 1px solid #E5E7EB; border-radius: 12px; font-size: 16px; font-family: 'Inter', sans-serif; transition: 0.3s; }
+        .form-input:focus { outline: none; border-color: var(--primary-color); box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2); }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">🎓 Умик</a>
+            <nav class="nav">
+                <a href="catalog.html">Курсы</a>
+                <a href="index.html#categories">Направления</a>
+                <a href="about.html">О нас</a>
+                <a href="contacts.html" style="color: var(--primary-color);">Контакты</a>
+            </nav>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-text">Войти</a>
+                <a href="#" class="btn btn-primary btn-sm">Регистрация</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="padding: 60px 20px;">
+        <h1 class="highlight" style="font-size: 48px; margin-bottom: 40px; text-align: center;">Свяжитесь с нами</h1>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; max-width: 1000px; margin: 0 auto;">
+            
+            <!-- Контактная информация -->
+            <div>
+                <h2 style="font-size: 28px; margin-bottom: 20px;">Наши контакты</h2>
+                <p style="margin-bottom: 20px; color: var(--text-gray);">Мы всегда рады помочь вам с выбором курса или ответить на организационные вопросы.</p>
+                
+                <div style="margin-bottom: 20px;">
+                    <strong style="display: block; margin-bottom: 5px;">📍 Адрес:</strong>
+                    <span>г. Москва, ул. Примерная, д. 10, офис 304</span>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <strong style="display: block; margin-bottom: 5px;">📞 Телефон:</strong>
+                    <a href="tel:+78001234567" style="color: var(--primary-color); font-weight: 600;">8 (800) 123-45-67</a>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <strong style="display: block; margin-bottom: 5px;">📧 Email:</strong>
+                    <a href="mailto:support@umik.ru" style="color: var(--primary-color); font-weight: 600;">support@umik.ru</a>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <strong style="display: block; margin-bottom: 5px;">🕒 Время работы:</strong>
+                    <span>Пн-Пт: 09:00 - 21:00</span>
+                </div>
+            </div>
+
+            <!-- Форма обратной связи -->
+            <form class="contact-form" onsubmit="return false;">
+                <h2 style="font-size: 24px; margin-bottom: 20px;">Напишите нам</h2>
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" class="form-input" placeholder="Иван Иванов">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="form-input" placeholder="example@mail.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" rows="4" class="form-input" placeholder="Ваш вопрос..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Отправить сообщение</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">🎓 Умик</div>
+                    <p>Современная образовательная платформа для старта в новой профессии.</p>
+                    <div class="socials">
+                        <a href="#">VK</a>
+                        <a href="#">TG</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Обучение</h4>
+                    <a href="catalog.html">Каталог курсов</a>
+                    <a href="#">Бесплатные курсы</a>
+                    <a href="#">Для бизнеса</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Компания</h4>
+                    <a href="about.html">О нас</a>
+                    <a href="contacts.html">Контакты</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Поддержка</h4>
+                    <a href="#">Помощь</a>
+                    <a href="#">Оферта</a>
+                </div>
+            </div>
+            <div class="copyright">© 2026 Умик. Все права защищены.</div>
+        </div>
+    </footer>
+</body>
+</html>
